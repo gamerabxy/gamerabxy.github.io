@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style> 
+.hoverable:hover {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  50% {border-radius: 50px;}
+}
+
+@keyframes mymove {
+  50% {border-radius: 50px;}
+}
+</style>
 <link rel="icon" href="https://cdn2.scratch.mit.edu/get_image/user/20536022_90x90.png">
 <title>gamerABXY</title>
 </head>
 <body>
-<p><a href="https://scratch.mit.edu/users/gamerABXY/"><img src="https://cdn2.scratch.mit.edu/get_image/user/20536022_90x90.png" style=" border: 1px solid yellow; border-radius: 25px;"/> gamerABXY </a></p>
-<p> My scratch project contest: <a href="javascript:window.open('https://scratch.mit.edu/projects/308397483/');"><img src="https://cdn2.scratch.mit.edu/get_image/project/308397483_282x210.png" alt="Project contest" style=" border: 1px solid black; border-radius: 5px;"/></a></p>
+<p><a href="https://scratch.mit.edu/users/gamerABXY/" id="hoverable"><img src="https://cdn2.scratch.mit.edu/get_image/user/20536022_90x90.png" style=" border: 1px solid yellow; border-radius: 25px;"/> gamerABXY </a></p>
+<p> My scratch project contest: <a href="javascript:window.open('https://scratch.mit.edu/projects/308397483/');" id="hoverable"><img src="https://cdn2.scratch.mit.edu/get_image/project/308397483_282x210.png" alt="Project contest" style=" border: 1px solid black; border-radius: 5px;"/></a></p>
 </body
 </html
